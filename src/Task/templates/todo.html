@@ -1,0 +1,24 @@
+<h1>This is todo view</h1>
+
+<!-- <ul> -->
+    <!-- <li>temporary item</li> -->
+    <!-- <li>temporary item</li> -->
+<!-- </ul>	 -->
+
+
+<form action="/add/" method="POST">{% csrf_token %}
+    <input type="text" name="work"/>
+	<input type="submit" value="Add"/>
+</form>	
+
+<ul> 
+    {% for x in all_items %}
+	<li>{{ x.work }}
+	<form action="/delete/{{ x.id}}/"
+    style="display: inline;"
+	method="POST">{% csrf_token %}
+	<input type="submit" value="Delete"/>
+</form>	
+	</li>
+	{% endfor %}
+</ul>	
