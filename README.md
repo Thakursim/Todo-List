@@ -10,6 +10,9 @@ Clone this repository using this command:-
    `git clone https://github.com/Thakursim/Todo-List`
 
 # Getting up and running.
+ Get inside the Todo-List using this command.
+ 
+ `cd Todo-List` 
 
 This steps below will get you up and running with a local development environment. We assume you have the following installed:
 
