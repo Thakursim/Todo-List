@@ -11,9 +11,12 @@
 	<input type="submit" value="Add"/>
 </form>	
 
+
+
 <ul> 
     {% for x in all_items %}
 	<li>{{ x.work }}
+	<a href="/edit/{{x.id}}">Edit</a>
 	<form action="/delete/{{ x.id}}/"
     style="display: inline;"
 	method="POST">{% csrf_token %}
@@ -21,4 +24,8 @@
 </form>	
 	</li>
 	{% endfor %}
-</ul>	
+</ul>
+
+
+
+	

@@ -1,11 +1,12 @@
-<ul> 
-    {% for x in all_items %}
-	<li>{{ x.work }}
-	<form action="/delete/{{ x.id}}/"
-    style="display: inline;"
-	method="POST">{% csrf_token %}
-	<input type="submit" value="Delete"/>
+<html>
+<h1>Update Task</h1>
+
+<body>
+	<form action="/edit/{{x.id}}/"
+    style="display: inline;" method="POST">{% csrf_token %}
+	<input type="text" value="{{ x.work }}" name="work2"/>
+	<input type="submit" value="submit"/>
 </form>	
-	</li>
-	{% endfor %}
-</ul>	
+</body>
+</html>
+
