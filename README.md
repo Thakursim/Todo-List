@@ -1,7 +1,7 @@
 # Todo-django Web Application
 
 
-User can create, read and delete a task using this application. 
+User can create, read, update and delete a task using this application. 
 
 This project uses django.
 
@@ -41,6 +41,6 @@ Copy the http address visible on your shell, while pasting it in your browser ad
  Over there you can see a login page, give the userid and password and you can see the **Task** present there. 
  
 You can add a task there manually or if you want to do that in a web page then just add **/todo/** after the port in url.
-Here you can see the tasks saved in the database and you can delete or add any task just by clicking on **Add** or **Delete** buttons. 
+Here you can see the tasks saved in the database and you can delete or add any task just by clicking on **Add** , **Delete** and **Edit** buttons. 
 
 
